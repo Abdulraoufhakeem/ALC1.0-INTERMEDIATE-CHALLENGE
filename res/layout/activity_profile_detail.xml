@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.retriever.profile_detailActivity"
+    android:weightSum="10">
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username1"
+        android:textSize="24sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="18dp"
+        android:layout_weight="2"
+        />
+
+    <ImageView
+        android:id="@+id/profilePix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:layout_below="@+id/username"
+        android:layout_weight="5"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/profileUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Url1"
+        android:textSize="24sp"
+        android:layout_marginLeft="36dp"
+        android:layout_weight="2"
+        android:layout_below="@+id/profilePix"/>
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:text="SHARE"
+        android:onClick="shareIt"
+        />
+
+</RelativeLayout>
